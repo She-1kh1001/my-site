@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABOUT LEARNING HTML</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background-color: blue;
+                color: red;
+                padding: 20px;
+                text-align: center;
+            }
+            nav a:hover{
+                color: white;
+                margin: 0 10px;
+                text-decoration: none;
+            }
+            .about, .projects, .contact {
+                padding: 20px;
+            }
+            .projects:hover{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+                transform: 1.05;
+            }
+            .project-box {
+                width: 200px;
+                height: 150px;
+                background-color: darkblue;
+                color: aliceblue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+            }
+             footer {
+        background-color: darkblue;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        .project-box {
+          width: 100%;
+          height: 120px;
+        }
+      }
+      button {
+        background-color: black;
+        color:white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .project-box {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>MY LEARNING</h1>
+            <nav>
+                <a href="#about">ABOUT LEARNING</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACTS</a>
+            </nav>
+        </header>
+        <section id="about" class="about">
+            <h1>SALOM!</h1>
+            <p>Maning ismim MUHAMMADRIZO.Men 15 yoshdaman. Bu mening birinchi saytim.</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="project-box">1</div>
+            <div class="project-box">2</div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>CONTACT ME</h2>
+            <p>Email: m930821445@gmail.com</p>
+            <button>CONTACT ME</button>
+        </section>
+
+        <footer>
+            &copy; 2026 website dasturchi
+        </footer>
+    </body>
+</html>
